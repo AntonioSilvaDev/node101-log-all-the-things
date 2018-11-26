@@ -46,6 +46,7 @@ describe("Logger", function() {
       const out = console.log.getCall(0).args[0].split(',');
       expect(moment(out[1], moment.ISO_8601).isValid()).to.equal(true);
       done();
+      
     })
   });
 
